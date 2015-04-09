@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE rdf:RDF [<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">]>
+
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:opus="http://lsdis.cs.uga.edu/projects/semdis/opus#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xml:base="http://lsdis.cs.uga.edu/projects/semdis/opus#" >
+
+<opus:Book_Chapter rdf:about="http://dblp.uni-trier.de/rec/bibtex/books/acm/kim95/AnnevelinkACFHK95">
+<opus:last_modified_date rdf:datatype="&xsd;date">2002-01-03</opus:last_modified_date>
+<opus:author>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/a/Annevelink:Jurgen.html" />
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/a/Ahad:Rafiul.html" />
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/c/Carlson:Amelia.html" />
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/f/Fishman:Daniel_H=.html" />
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/h/Heytens:Michael_L=.html" />
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/k/Kent:William.html" />
+ </rdf:Seq>
+</opus:author>
+<rdfs:label>Object SQL - A Language for the Design and Implementation of Object Databases.</rdfs:label>
+<opus:pages>42-68</opus:pages>
+<opus:year rdf:datatype="&xsd;gYear">1995</opus:year>
+<opus:book_title>Modern Database Systems</opus:book_title>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html#AnnevelinkACFHK95</dc:relation>
+</opus:Book_Chapter>
+
+</rdf:RDF>

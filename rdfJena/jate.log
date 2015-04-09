@@ -1,0 +1,60 @@
+2015-03-15 17:39:18,376 [main] DEBUG main org.apache.jena.riot.system.stream.JenaIOEnvironment - Failed to find configuration: location-mapping.ttl;location-mapping.rdf;location-mapping.n3;etc/location-mapping.rdf;etc/location-mapping.n3;etc/location-mapping.ttl
+2015-03-15 17:39:18,562 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - open(data/sweto_nano.rdf)
+2015-03-15 17:39:18,562 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Not mapped: data/sweto_nano.rdf
+2015-03-15 17:39:18,567 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Found: data/sweto_nano.rdf (LocatorFile)
+2015-03-15 20:30:18,346 [main] DEBUG main org.apache.jena.riot.system.stream.JenaIOEnvironment - Failed to find configuration: location-mapping.ttl;location-mapping.rdf;location-mapping.n3;etc/location-mapping.rdf;etc/location-mapping.n3;etc/location-mapping.ttl
+2015-03-15 20:30:19,091 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - open(data/sweto_nano.rdf)
+2015-03-15 20:30:19,092 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Not mapped: data/sweto_nano.rdf
+2015-03-15 20:30:19,312 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Found: data/sweto_nano.rdf (LocatorFile)
+2015-03-15 20:31:50,123 [main] DEBUG main org.apache.jena.riot.system.stream.JenaIOEnvironment - Failed to find configuration: location-mapping.ttl;location-mapping.rdf;location-mapping.n3;etc/location-mapping.rdf;etc/location-mapping.n3;etc/location-mapping.ttl
+2015-03-15 20:31:50,209 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - open(data/sweto_nano.rdf)
+2015-03-15 20:31:50,209 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Not mapped: data/sweto_nano.rdf
+2015-03-15 20:31:50,212 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Found: data/sweto_nano.rdf (LocatorFile)
+2015-04-06 20:12:53,563 [main] DEBUG main org.apache.jena.riot.system.stream.JenaIOEnvironment - Failed to find configuration: location-mapping.ttl;location-mapping.rdf;location-mapping.n3;etc/location-mapping.rdf;etc/location-mapping.n3;etc/location-mapping.ttl
+2015-04-06 20:12:54,090 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - open(data/sweto_pico.rdf)
+2015-04-06 20:12:54,090 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Not mapped: data/sweto_pico.rdf
+2015-04-06 20:12:54,200 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Found: data/sweto_pico.rdf (LocatorFile)
+2015-04-06 20:13:28,475 [main] DEBUG main org.apache.jena.riot.system.stream.JenaIOEnvironment - Failed to find configuration: location-mapping.ttl;location-mapping.rdf;location-mapping.n3;etc/location-mapping.rdf;etc/location-mapping.n3;etc/location-mapping.ttl
+2015-04-06 20:13:28,583 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - open(data/sweto_nano.rdf)
+2015-04-06 20:13:28,583 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Not mapped: data/sweto_nano.rdf
+2015-04-06 20:13:28,586 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Found: data/sweto_nano.rdf (LocatorFile)
+2015-04-06 20:13:30,221 [main] DEBUG main org.apache.jena.riot.system.stream.JenaIOEnvironment - Failed to find configuration: location-mapping.ttl;location-mapping.rdf;location-mapping.n3;etc/location-mapping.rdf;etc/location-mapping.n3;etc/location-mapping.ttl
+2015-04-06 20:13:30,318 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - open(data/sweto_nano.rdf)
+2015-04-06 20:13:30,318 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Not mapped: data/sweto_nano.rdf
+2015-04-06 20:13:30,320 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Found: data/sweto_nano.rdf (LocatorFile)
+2015-04-06 21:12:40,292 [main] DEBUG main org.apache.jena.riot.system.stream.JenaIOEnvironment - Failed to find configuration: location-mapping.ttl;location-mapping.rdf;location-mapping.n3;etc/location-mapping.rdf;etc/location-mapping.n3;etc/location-mapping.ttl
+2015-04-06 21:12:40,406 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - open(data/sweto_nano.rdf)
+2015-04-06 21:12:40,406 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Not mapped: data/sweto_nano.rdf
+2015-04-06 21:12:40,408 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Found: data/sweto_nano.rdf (LocatorFile)
+2015-04-06 21:15:05,952 [main] DEBUG main org.apache.jena.riot.system.stream.JenaIOEnvironment - Failed to find configuration: location-mapping.ttl;location-mapping.rdf;location-mapping.n3;etc/location-mapping.rdf;etc/location-mapping.n3;etc/location-mapping.ttl
+2015-04-06 21:15:06,052 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - open(data/sweto_nano.rdf)
+2015-04-06 21:15:06,052 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Not mapped: data/sweto_nano.rdf
+2015-04-06 21:15:06,054 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Found: data/sweto_nano.rdf (LocatorFile)
+2015-04-06 21:16:52,243 [main] DEBUG main org.apache.jena.riot.system.stream.JenaIOEnvironment - Failed to find configuration: location-mapping.ttl;location-mapping.rdf;location-mapping.n3;etc/location-mapping.rdf;etc/location-mapping.n3;etc/location-mapping.ttl
+2015-04-06 21:16:52,346 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - open(data/sweto_nano.rdf)
+2015-04-06 21:16:52,346 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Not mapped: data/sweto_nano.rdf
+2015-04-06 21:16:52,348 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Found: data/sweto_nano.rdf (LocatorFile)
+2015-04-06 21:32:04,093 [main] DEBUG main org.apache.jena.riot.system.stream.JenaIOEnvironment - Failed to find configuration: location-mapping.ttl;location-mapping.rdf;location-mapping.n3;etc/location-mapping.rdf;etc/location-mapping.n3;etc/location-mapping.ttl
+2015-04-06 21:32:04,180 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - open(data/sweto_nano.rdf)
+2015-04-06 21:32:04,181 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Not mapped: data/sweto_nano.rdf
+2015-04-06 21:32:04,184 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Found: data/sweto_nano.rdf (LocatorFile)
+2015-04-06 21:50:50,761 [main] DEBUG main org.apache.jena.riot.system.stream.JenaIOEnvironment - Failed to find configuration: location-mapping.ttl;location-mapping.rdf;location-mapping.n3;etc/location-mapping.rdf;etc/location-mapping.n3;etc/location-mapping.ttl
+2015-04-06 21:50:50,838 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - open(data/sweto_nano.rdf)
+2015-04-06 21:50:50,838 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Not mapped: data/sweto_nano.rdf
+2015-04-06 21:50:50,840 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Found: data/sweto_nano.rdf (LocatorFile)
+2015-04-06 21:50:56,049 [main] DEBUG main org.apache.jena.riot.system.stream.JenaIOEnvironment - Failed to find configuration: location-mapping.ttl;location-mapping.rdf;location-mapping.n3;etc/location-mapping.rdf;etc/location-mapping.n3;etc/location-mapping.ttl
+2015-04-06 21:50:56,128 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - open(data/sweto_nano.rdf)
+2015-04-06 21:50:56,128 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Not mapped: data/sweto_nano.rdf
+2015-04-06 21:50:56,130 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Found: data/sweto_nano.rdf (LocatorFile)
+2015-04-06 21:51:02,141 [main] DEBUG main org.apache.jena.riot.system.stream.JenaIOEnvironment - Failed to find configuration: location-mapping.ttl;location-mapping.rdf;location-mapping.n3;etc/location-mapping.rdf;etc/location-mapping.n3;etc/location-mapping.ttl
+2015-04-06 21:51:02,222 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - open(data/sweto_nano.rdf)
+2015-04-06 21:51:02,222 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Not mapped: data/sweto_nano.rdf
+2015-04-06 21:51:02,224 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Found: data/sweto_nano.rdf (LocatorFile)
+2015-04-06 21:51:10,098 [main] DEBUG main org.apache.jena.riot.system.stream.JenaIOEnvironment - Failed to find configuration: location-mapping.ttl;location-mapping.rdf;location-mapping.n3;etc/location-mapping.rdf;etc/location-mapping.n3;etc/location-mapping.ttl
+2015-04-06 21:51:10,183 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - open(data/sweto_nano.rdf)
+2015-04-06 21:51:10,183 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Not mapped: data/sweto_nano.rdf
+2015-04-06 21:51:10,185 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Found: data/sweto_nano.rdf (LocatorFile)
+2015-04-06 21:51:42,960 [main] DEBUG main org.apache.jena.riot.system.stream.JenaIOEnvironment - Failed to find configuration: location-mapping.ttl;location-mapping.rdf;location-mapping.n3;etc/location-mapping.rdf;etc/location-mapping.n3;etc/location-mapping.ttl
+2015-04-06 21:51:43,039 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - open(data/sweto_nano.rdf)
+2015-04-06 21:51:43,039 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Not mapped: data/sweto_nano.rdf
+2015-04-06 21:51:43,041 [main] DEBUG main org.apache.jena.riot.system.stream.StreamManager - Found: data/sweto_nano.rdf (LocatorFile)
