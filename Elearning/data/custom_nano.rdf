@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE rdf:RDF [<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">]>
+
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:opus="http://lsdis.cs.uga.edu/projects/semdis/opus#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xml:base="http://lsdis.cs.uga.edu/projects/semdis/opus#" 
+  
+  xmlns:lom-base=" http://kmr.nada.kth.se/el/ims/schemas/lom-base"
+  xmlns:lom-gen=" http://kmr.nada.kth.se/el/ims/schemas/lom-general"
+  xmlns:lom-tech=" http://kmr.nada.kth.se/el/ims/schemas/lom-technical"
+  xmlns:lom-edu="http://kmr.nada.kth.se/el/ims/schemas/lom-educational" >
+
+<opus:Book_Chapter rdf:about="http://dblp.uni-trier.de/rec/bibtex/books/acm/kim95/AnnevelinkACFHK95">
+<opus:last_modified_date rdf:datatype="&xsd;date">2002-01-03</opus:last_modified_date>
+<opus:author>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/a/Annevelink:Jurgen.html" />
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/a/Ahad:Rafiul.html" />
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/c/Carlson:Amelia.html" />
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/f/Fishman:Daniel_H=.html" />
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/h/Heytens:Michael_L=.html" />
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/k/Kent:William.html" />
+ </rdf:Seq>
+</opus:author>
+<rdfs:label>Object SQL - A Language for the Design and Implementation of Object Databases.</rdfs:label>
+<opus:pages>42-68</opus:pages>
+<opus:year rdf:datatype="&xsd;gYear">1995</opus:year>
+<lom-edu:type>textual</lom-edu:type>
+<lom-edu:difficulty>0</lom-edu:difficulty>
+<dc:format>pdf</dc:format>
+<opus:module>Modern Database</opus:module>
+<opus:domain>Database</opus:domain>
+<opus:book_title>Modern Database Systems</opus:book_title>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html#AnnevelinkACFHK95</dc:relation>
+</opus:Book_Chapter>
+
+
+<opus:Book_Chapter rdf:about="http://dblp.uni-trier.de/rec/bibtex/books/acm/kim95/KemperM95">
+<opus:last_modified_date rdf:datatype="&xsd;date">2002-01-03</opus:last_modified_date>
+<opus:author>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/k/Kemper:Alfons.html" />
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/m/Moerkotte:Guido.html" />
+ </rdf:Seq>
+</opus:author>
+<rdfs:label>Physical Object Management.</rdfs:label>
+<opus:pages>175-202</opus:pages>
+<opus:year rdf:datatype="&xsd;gYear">1995</opus:year>
+<lom-edu:type>textual</lom-edu:type>
+<lom-edu:difficulty>1</lom-edu:difficulty>
+<dc:format>pdf</dc:format>
+<opus:module>Modern Database</opus:module>
+<opus:domain>Database</opus:domain>
+<opus:book_title>Modern Database Systems</opus:book_title>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html#KemperM95</dc:relation>
+</opus:Book_Chapter>
+
+<opus:Book_Chapter>
+<opus:last_modified_date rdf:datatype="&xsd;date">2002-01-03</opus:last_modified_date>
+<opus:author>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/o/Omiecinski:Edward.html" />
+ </rdf:Seq>
+</opus:author>
+<rdfs:label>Parallel Relational Database Systems.</rdfs:label>
+<opus:pages>494-512</opus:pages>
+<opus:year rdf:datatype="&xsd;gYear">1995</opus:year>
+<lom-edu:type>textual</lom-edu:type>
+<lom-edu:difficulty>2</lom-edu:difficulty>
+<dc:format>pdf</dc:format>
+<opus:module>Modern Database</opus:module>
+<opus:domain>Database</opus:domain>
+<opus:book_title>Modern Database Systems</opus:book_title>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html#Omiecinski95</dc:relation>
+</opus:Book_Chapter>
+
+<opus:Book rdf:about="http://dblp.uni-trier.de/rec/bibtex/books/acm/Kim95">
+<opus:last_modified_date rdf:datatype="&xsd;date">2004-03-08</opus:last_modified_date>
+<opus:editor>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/k/Kim:Won.html" />
+ </rdf:Seq>
+</opus:editor>
+<rdfs:label>Modern Database Systems: The Object Model, Interoperability, and Beyond.</rdfs:label>
+<opus:book_title>Modern Database Systems</opus:book_title>
+<dc:publisher rdf:resource="http://www.acm.org/pubs/" />
+<dc:publisher rdf:resource="http://www.awl.com/" />
+<dc:language>en</dc:language>
+<opus:year rdf:datatype="&xsd;gYear">1995</opus:year>
+<opus:isbn>0-201-59098-0</opus:isbn>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html</dc:relation>
+</opus:Book>
+
+<opus:Book_Chapter>
+<rdfs:label>Introduction</rdfs:label>
+<opus:pages>15-38</opus:pages>
+<opus:year rdf:datatype="&xsd;gYear">2001</opus:year>
+<lom-edu:type>textual</lom-edu:type>
+<lom-edu:difficulty>0</lom-edu:difficulty>
+<dc:format>pdf</dc:format>
+<opus:module>Introduction to DBMS</opus:module>
+<opus:domain>Database</opus:domain>
+<opus:book_title>Database System Concepts</opus:book_title>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html#Omiecinski95</dc:relation>
+</opus:Book_Chapter>
+
+
+<opus:Book_Chapter>
+<rdfs:label>Data Models</rdfs:label>
+<opus:pages>39-143</opus:pages>
+<opus:year rdf:datatype="&xsd;gYear">2001</opus:year>
+<lom-edu:type>textual</lom-edu:type>
+<lom-edu:difficulty>0</lom-edu:difficulty>
+<dc:format>pdf</dc:format>
+<opus:module>Database Design Theory</opus:module>
+<opus:domain>Database</opus:domain>
+<opus:book_title>Database System Concepts</opus:book_title>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html#Omiecinski95</dc:relation>
+</opus:Book_Chapter>
+
+<opus:Book_Chapter>
+<rdfs:label>Relational Databases</rdfs:label>
+<opus:pages>144-310</opus:pages>
+<opus:year rdf:datatype="&xsd;gYear">2001</opus:year>
+<lom-edu:type>textual</lom-edu:type>
+<lom-edu:difficulty>0</lom-edu:difficulty>
+<dc:format>pdf</dc:format>
+<opus:module>Relational Data Modeling</opus:module>
+<opus:domain>Database</opus:domain>
+<opus:book_title>Database System Concepts</opus:book_title>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html#Omiecinski95</dc:relation>
+</opus:Book_Chapter>
+
+<opus:Book_Chapter>
+<rdfs:label>Object-based Databases and XML</rdfs:label>
+<opus:pages>311-396</opus:pages>
+<opus:year rdf:datatype="&xsd;gYear">2001</opus:year>
+<lom-edu:type>textual</lom-edu:type>
+<lom-edu:difficulty>1</lom-edu:difficulty>
+<dc:format>pdf</dc:format>
+<opus:module>Object based Databases</opus:module>
+<opus:domain>Database</opus:domain>
+<opus:book_title>Database System Concepts</opus:book_title>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html#Omiecinski95</dc:relation>
+</opus:Book_Chapter>
+
+<opus:Book_Chapter>
+<rdfs:label>Data Storage and Querying</rdfs:label>
+<opus:pages>397-566</opus:pages>
+<opus:year rdf:datatype="&xsd;gYear">2001</opus:year>
+<lom-edu:type>textual</lom-edu:type>
+<lom-edu:difficulty>0</lom-edu:difficulty>
+<dc:format>pdf</dc:format>
+<opus:module>Data Storage, Indexing, Query</opus:module>
+<opus:domain>Database</opus:domain>
+<opus:book_title>Database System Concepts</opus:book_title>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html#Omiecinski95</dc:relation>
+</opus:Book_Chapter>
+
+<opus:Book_Chapter>
+<rdfs:label>Transaction Management</rdfs:label>
+<opus:pages>567-682</opus:pages>
+<opus:year rdf:datatype="&xsd;gYear">2001</opus:year>
+<lom-edu:type>textual</lom-edu:type>
+<lom-edu:difficulty>2</lom-edu:difficulty>
+<dc:format>pdf</dc:format>
+<opus:module>Transaction Management</opus:module>
+<opus:domain>Database</opus:domain>
+<opus:book_title>Database System Concepts</opus:book_title>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html#Omiecinski95</dc:relation>
+</opus:Book_Chapter>
+
+<opus:Book_Chapter>
+<rdfs:label>Database System Architecture</rdfs:label>
+<opus:pages>683-776</opus:pages>
+<opus:year rdf:datatype="&xsd;gYear">2001</opus:year>
+<lom-edu:type>textual</lom-edu:type>
+<lom-edu:difficulty>0</lom-edu:difficulty>
+<dc:format>pdf</dc:format>
+<opus:module>Advance Database Topics</opus:module>
+<opus:domain>Database</opus:domain>
+<opus:book_title>Database System Concepts</opus:book_title>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html#Omiecinski95</dc:relation>
+</opus:Book_Chapter>
+
+<opus:Book_Chapter>
+<rdfs:label>Other Topics</rdfs:label>
+<opus:pages>777-915</opus:pages>
+<opus:year rdf:datatype="&xsd;gYear">2001</opus:year>
+<lom-edu:type>textual</lom-edu:type>
+<lom-edu:difficulty>2</lom-edu:difficulty>
+<dc:format>pdf</dc:format>
+<opus:module>Advance Database Topics</opus:module>
+<opus:domain>Database</opus:domain>
+<opus:book_title>Database System Concepts</opus:book_title>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html#Omiecinski95</dc:relation>
+</opus:Book_Chapter>
+
+<opus:Book>
+<opus:editor>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/K/Korth.html" />
+ </rdf:Seq>
+</opus:editor>
+<rdfs:label>Database System Concepts, Fourth Edition</rdfs:label>
+<opus:book_title>Database System Concepts</opus:book_title>
+<dc:publisher rdf:resource="http://www.mheducation.com/" />
+<dc:language>en</dc:language>
+<opus:isbn>0</opus:isbn>
+<opus:year rdf:datatype="&xsd;gYear">2001</opus:year>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html</dc:relation>
+</opus:Book>
+
+<opus:Book_Chapter>
+<rdfs:label>Background</rdfs:label>
+<opus:pages>52-118</opus:pages>
+<opus:year rdf:datatype="&xsd;gYear">2005</opus:year>
+<lom-edu:type>textual</lom-edu:type>
+<lom-edu:difficulty>1</lom-edu:difficulty>
+<dc:format>pdf</dc:format>
+<opus:module>Introduction to DBMS</opus:module>
+<opus:domain>Database</opus:domain>
+<opus:book_title>Database Systems</opus:book_title>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html#Omiecinski95</dc:relation>
+</opus:Book_Chapter>
+
+<opus:Book_Chapter>
+<rdfs:label>The Relational Model and Languages</rdfs:label>
+<opus:pages>119-329</opus:pages>
+<opus:year rdf:datatype="&xsd;gYear">2005</opus:year>
+<lom-edu:type>textual</lom-edu:type>
+<lom-edu:difficulty>1</lom-edu:difficulty>
+<dc:format>pdf</dc:format>
+<opus:module>Relational Data Modeling</opus:module>
+<opus:domain>Database</opus:domain>
+<opus:book_title>Database Systems</opus:book_title>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html#Omiecinski95</dc:relation>
+</opus:Book_Chapter>
+
+<opus:Book_Chapter>
+<rdfs:label>Database Analysis and Design Techniques</rdfs:label>
+<opus:pages>330-485</opus:pages>
+<opus:year rdf:datatype="&xsd;gYear">2005</opus:year>
+<lom-edu:type>textual</lom-edu:type>
+<lom-edu:difficulty>2</lom-edu:difficulty>
+<dc:format>pdf</dc:format>
+<opus:module>Database Design Theory</opus:module>
+<opus:domain>Database</opus:domain>
+<opus:book_title>Database Systems</opus:book_title>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html#Omiecinski95</dc:relation>
+</opus:Book_Chapter>
+
+<opus:Book_Chapter>
+<rdfs:label>Methodology</rdfs:label>
+<opus:pages>486-589</opus:pages>
+<opus:year rdf:datatype="&xsd;gYear">2005</opus:year>
+<lom-edu:type>textual</lom-edu:type>
+<lom-edu:difficulty>1</lom-edu:difficulty>
+<dc:format>pdf</dc:format>
+<opus:module>Data Storage, Indexing, Query</opus:module>
+<opus:domain>Database</opus:domain>
+<opus:book_title>Database Systems</opus:book_title>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html#Omiecinski95</dc:relation>
+</opus:Book_Chapter>
+
+<opus:Book_Chapter>
+<rdfs:label>Selected Database Issues</rdfs:label>
+<opus:pages>590-735</opus:pages>
+<opus:year rdf:datatype="&xsd;gYear">2005</opus:year>
+<lom-edu:type>textual</lom-edu:type>
+<lom-edu:difficulty>1</lom-edu:difficulty>
+<dc:format>pdf</dc:format>
+<opus:module>Transaction Management</opus:module>
+<opus:domain>Database</opus:domain>
+<opus:book_title>Database Systems</opus:book_title>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html#Omiecinski95</dc:relation>
+</opus:Book_Chapter>
+
+<opus:Book>
+<opus:editor>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/T/Thomas.Connolly.html" />
+ </rdf:Seq>
+</opus:editor>
+<rdfs:label>Database Systems A Practical Approach to Design, Implementation, and Management, Fourth Edition</rdfs:label>
+<opus:book_title>Database Systems</opus:book_title>
+<dc:publisher rdf:resource="http://www.pearsoned.co.uk/" />
+<dc:language>en</dc:language>
+<opus:isbn>0-321-21025-5</opus:isbn>
+<opus:year rdf:datatype="&xsd;gYear">2005</opus:year>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html</dc:relation>
+</opus:Book>
+
+<opus:Book_Chapter>
+<rdfs:label>INTRODUCTION AND CONCEPTUAL MODELING</rdfs:label>
+<opus:pages>3-121</opus:pages>
+<opus:year rdf:datatype="&xsd;gYear">2003</opus:year>
+<lom-edu:type>textual</lom-edu:type>
+<lom-edu:difficulty>2</lom-edu:difficulty>
+<dc:format>pdf</dc:format>
+<opus:module>Introduction to DBMS</opus:module>
+<opus:domain>Database</opus:domain>
+<opus:book_title>Fundamentals of Database Systems</opus:book_title>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html#Omiecinski95</dc:relation>
+</opus:Book_Chapter>
+
+<opus:Book_Chapter>
+<rdfs:label>RELATIONAL MODEL: CONCEPTS, CONSTRAINTS, LANGUAGES,DESIGN, AND PROGRAMMING</rdfs:label>
+<opus:pages>125-289</opus:pages>
+<opus:year rdf:datatype="&xsd;gYear">2003</opus:year>
+<lom-edu:type>textual</lom-edu:type>
+<lom-edu:difficulty>2</lom-edu:difficulty>
+<dc:format>pdf</dc:format>
+<opus:module>Relational Data Modeling</opus:module>
+<opus:domain>Database</opus:domain>
+<opus:book_title>Fundamentals of Database Systems</opus:book_title>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html#Omiecinski95</dc:relation>
+</opus:Book_Chapter>
+
+<opus:Book_Chapter>
+<rdfs:label>DATABASE DESIGN THEORY AND METHODOLOGY</rdfs:label>
+<opus:pages>293-406</opus:pages>
+<opus:year rdf:datatype="&xsd;gYear">2003</opus:year>
+<lom-edu:type>textual</lom-edu:type>
+<lom-edu:difficulty>1</lom-edu:difficulty>
+<dc:format>pdf</dc:format>
+<opus:module>Database Design Theory</opus:module>
+<opus:domain>Database</opus:domain>
+<opus:book_title>Fundamentals of Database Systems</opus:book_title>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html#Omiecinski95</dc:relation>
+</opus:Book_Chapter>
+
+<opus:Book_Chapter>
+<rdfs:label>DATA STORAGE, INDEXING, QUERY PROCESSING, AND PHYSICAL DESIGN</rdfs:label>
+<opus:pages>422-558</opus:pages>
+<opus:year rdf:datatype="&xsd;gYear">2003</opus:year>
+<lom-edu:type>textual</lom-edu:type>
+<lom-edu:difficulty>2</lom-edu:difficulty>
+<dc:format>pdf</dc:format>
+<opus:module>Data Storage, Indexing, Query</opus:module>
+<opus:domain>Database</opus:domain>
+<opus:book_title>Fundamentals of Database Systems</opus:book_title>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html#Omiecinski95</dc:relation>
+</opus:Book_Chapter>
+
+<opus:Book_Chapter>
+<rdfs:label>TRANSACTION PROCESSING CONCEPTS</rdfs:label>
+<opus:pages>562-611</opus:pages>
+<opus:year rdf:datatype="&xsd;gYear">2003</opus:year>
+<lom-edu:type>textual</lom-edu:type>
+<lom-edu:difficulty>0</lom-edu:difficulty>
+<dc:format>pdf</dc:format>
+<opus:module>Transaction Management</opus:module>
+<opus:domain>Database</opus:domain>
+<opus:book_title>Fundamentals of Database Systems</opus:book_title>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html#Omiecinski95</dc:relation>
+</opus:Book_Chapter>
+
+<opus:Book_Chapter>
+<rdfs:label>OBJECT AND OBJECT-RELATIONAL DATABASES</rdfs:label>
+<opus:pages>639-728</opus:pages>
+<opus:year rdf:datatype="&xsd;gYear">2003</opus:year>
+<lom-edu:type>textual</lom-edu:type>
+<lom-edu:difficulty>0</lom-edu:difficulty>
+<dc:format>pdf</dc:format>
+<opus:module>Object based Databases</opus:module>
+<opus:domain>Database</opus:domain>
+<opus:book_title>Fundamentals of Database Systems</opus:book_title>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html#Omiecinski95</dc:relation>
+</opus:Book_Chapter>
+
+<opus:Book_Chapter>
+<rdfs:label>FURTHER TOPICS</rdfs:label>
+<opus:pages>731-835</opus:pages>
+<opus:year rdf:datatype="&xsd;gYear">2003</opus:year>
+<lom-edu:type>textual</lom-edu:type>
+<lom-edu:difficulty>1</lom-edu:difficulty>
+<dc:format>pdf</dc:format>
+<opus:module>Advance Database Topics</opus:module>
+<opus:domain>Database</opus:domain>
+<opus:book_title>Fundamentals of Database Systems</opus:book_title>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html#Omiecinski95</dc:relation>
+</opus:Book_Chapter>
+
+<opus:Book>
+<opus:editor>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/K/Katherine.Harutunian.html" />
+ </rdf:Seq>
+</opus:editor>
+<rdfs:label>Fundaments of Database Systems, Fourth Edition</rdfs:label>
+<opus:book_title>Fundamentals of Database Systems</opus:book_title>
+<dc:publisher rdf:resource="http://www.aw.com/" />
+<dc:language>en</dc:language>
+<opus:isbn>0-321-12226-7</opus:isbn>
+<opus:year rdf:datatype="&xsd;gYear">2003</opus:year>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html</dc:relation>
+</opus:Book>
+
+<opus:Book_Chapter>
+<rdfs:label>Advanced Topics</rdfs:label>
+<opus:pages>358-417</opus:pages>
+<opus:year rdf:datatype="&xsd;gYear">2004</opus:year>
+<lom-edu:type>textual</lom-edu:type>
+<lom-edu:difficulty>2</lom-edu:difficulty>
+<dc:format>pdf</dc:format>
+<opus:module>Object based Databases</opus:module>
+<opus:domain>Database</opus:domain>
+<opus:book_title>Database Systems A Pragmatic Approach</opus:book_title>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html#Omiecinski95</dc:relation>
+</opus:Book_Chapter>
+
+<opus:Book>
+<opus:editor>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/Elvis.Foster.html" />
+ </rdf:Seq>
+</opus:editor>
+<rdfs:label>Database Systems A Pragmatic Approach</rdfs:label>
+<opus:book_title>Database Systems A Pragmatic Approach</opus:book_title>
+<dc:publisher rdf:resource="http://www.apress.com/" />
+<dc:language>en</dc:language>
+<opus:isbn>968-1-484208-78-6</opus:isbn>
+<opus:year rdf:datatype="&xsd;gYear">2004</opus:year>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html</dc:relation>
+</opus:Book>
+
+</rdf:RDF>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE rdf:RDF [<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">]>
+
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:opus="http://lsdis.cs.uga.edu/projects/semdis/opus#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xml:base="http://lsdis.cs.uga.edu/projects/semdis/opus#" 
+  
+  xmlns:lom-base=" http://kmr.nada.kth.se/el/ims/schemas/lom-base"
+  xmlns:lom-gen=" http://kmr.nada.kth.se/el/ims/schemas/lom-general"
+  xmlns:lom-tech=" http://kmr.nada.kth.se/el/ims/schemas/lom-technical"
+  xmlns:lom-edu="http://kmr.nada.kth.se/el/ims/schemas/lom-educational" >
+
+<opus:Book_Chapter rdf:about="http://dblp.uni-trier.de/rec/bibtex/books/acm/kim95/AnnevelinkACFHK95">
+<opus:last_modified_date rdf:datatype="&xsd;date">2002-01-03</opus:last_modified_date>
+<opus:author>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/a/Annevelink:Jurgen.html" />
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/a/Ahad:Rafiul.html" />
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/c/Carlson:Amelia.html" />
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/f/Fishman:Daniel_H=.html" />
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/h/Heytens:Michael_L=.html" />
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/k/Kent:William.html" />
+ </rdf:Seq>
+</opus:author>
+<rdfs:label>Object SQL - A Language for the Design and Implementation of Object Databases.</rdfs:label>
+<opus:pages>42-68</opus:pages>
+<opus:year rdf:datatype="&xsd;gYear">1995</opus:year>
+<lom-edu:type>textual</lom-edu:type>
+<lom-edu:difficulty>0</lom-edu:difficulty>
+<dc:format>pdf</dc:format>
+<opus:module>Modern Database</opus:module>
+<opus:domain>Database</opus:domain>
+<opus:book_title>Modern Database Systems</opus:book_title>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html#AnnevelinkACFHK95</dc:relation>
+</opus:Book_Chapter>
+
+
+<opus:Book_Chapter rdf:about="http://dblp.uni-trier.de/rec/bibtex/books/acm/kim95/KemperM95">
+<opus:last_modified_date rdf:datatype="&xsd;date">2002-01-03</opus:last_modified_date>
+<opus:author>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/k/Kemper:Alfons.html" />
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/m/Moerkotte:Guido.html" />
+ </rdf:Seq>
+</opus:author>
+<rdfs:label>Physical Object Management.</rdfs:label>
+<opus:pages>175-202</opus:pages>
+<opus:year rdf:datatype="&xsd;gYear">1995</opus:year>
+<lom-edu:type>textual</lom-edu:type>
+<lom-edu:difficulty>0</lom-edu:difficulty>
+<dc:format>pdf</dc:format>
+<opus:module>Modern Database</opus:module>
+<opus:domain>Database</opus:domain>
+<opus:book_title>Modern Database Systems</opus:book_title>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html#KemperM95</dc:relation>
+</opus:Book_Chapter>
+
+<opus:Book_Chapter rdf:about="http://dblp.uni-trier.de/rec/bibtex/books/acm/kim95/Omiecinski95">
+<opus:last_modified_date rdf:datatype="&xsd;date">2002-01-03</opus:last_modified_date>
+<opus:author>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/o/Omiecinski:Edward.html" />
+ </rdf:Seq>
+</opus:author>
+<rdfs:label>Parallel Relational Database Systems.</rdfs:label>
+<opus:pages>494-512</opus:pages>
+<opus:year rdf:datatype="&xsd;gYear">1995</opus:year>
+<lom-edu:type>textual</lom-edu:type>
+<lom-edu:difficulty>0</lom-edu:difficulty>
+<dc:format>pdf</dc:format>
+<opus:module>Modern Database</opus:module>
+<opus:domain>Database</opus:domain>
+<opus:book_title>Modern Database Systems</opus:book_title>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html#Omiecinski95</dc:relation>
+</opus:Book_Chapter>
+
+<opus:Book rdf:about="http://dblp.uni-trier.de/rec/bibtex/books/acm/Kim95">
+<opus:last_modified_date rdf:datatype="&xsd;date">2004-03-08</opus:last_modified_date>
+<opus:editor>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/k/Kim:Won.html" />
+ </rdf:Seq>
+</opus:editor>
+<rdfs:label>Modern Database Systems: The Object Model, Interoperability, and Beyond.</rdfs:label>
+<opus:book_title>Modern Database Systems</opus:book_title>
+<dc:publisher rdf:resource="http://www.acm.org/pubs/" />
+<dc:publisher rdf:resource="http://www.awl.com/" />
+<dc:language>en</dc:language>
+<opus:year rdf:datatype="&xsd;gYear">1995</opus:year>
+<opus:isbn>0-201-59098-0</opus:isbn>
+<dc:relation>http://www.informatik.uni-trier.de/~ley/db/books/collections/kim95.html</dc:relation>
+</opus:Book>
+
+</rdf:RDF>
