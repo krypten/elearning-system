@@ -10,12 +10,13 @@ public class bridge {
     public static CentralSystem system = new CentralSystem();
     public static AdaptiveLPSEngine engine = new AdaptiveLPSEngine();
     
-    public static final String JAVABRIDGE_PORT = "8087";
+    public static final String JAVABRIDGE_PORT = "8086";
     static final php.java.bridge.JavaBridgeRunner runner = php.java.bridge.JavaBridgeRunner.getInstance(JAVABRIDGE_PORT);   
      
     public static void main(String[] args) throws InterruptedException
     {
-    	system.run();
+    	// system.test(); // For testing HMM
+    	system.init();
     	if (runner != null) {
     		runner.waitFor();
     	} else {
@@ -23,5 +24,4 @@ public class bridge {
     	}
         System.exit(0);
     }
-    
 }

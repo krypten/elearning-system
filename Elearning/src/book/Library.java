@@ -37,8 +37,9 @@ public class Library {
 	public void print() {
 		
 		for(Entry<String, Book> book : getStore().entrySet()){
-            System.out.println("\n" + book.getKey() + " :: \n\t ");
+            System.out.println("\n" + book.getKey() + " ::=> \n");
             book.getValue().print();
+            System.out.println();
 		}
 		System.out.println(getStore());
 	}

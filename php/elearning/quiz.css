@@ -1,0 +1,174 @@
+html,body {
+	margin:0px;
+    width:100%;
+    height:100%;
+    position: absolute;
+    background-color: rgba(227, 227, 227 ,0.7);
+}
+table {
+	border-collapse: collapse;
+}
+#loginframe {
+	position: absolute;
+	top: 22%;
+	left: 15%;
+	width: 70%;
+	background-color: rgba(227, 227, 227 ,0.7);
+	color: rgb(153, 0, 51);
+	border-radius: 20px;
+	border-width: 5px;
+	border-style: ridge;
+	border-collapse: separate;
+}
+#timer {
+	position: absolute;
+	top: 37%;
+	right: 1.3%;
+	width: 9.7%;
+	height: 4%;
+	border-color: rgb(153, 0, 51);
+	color: rgb(153, 0, 51);
+	text-align: center;
+	border-radius: 10px;
+	border-width: 2px;
+	border-style: ridge;
+	padding-bottom: 2px;
+}
+#signup {
+	position: absolute;
+	top: 22%;
+	left: 30%;
+	width: 40%;
+	text-align: center;
+	background-color: rgba(227, 227, 227 ,0.7);
+	border-radius: 10px;
+}
+#list {
+	position: absolute;
+	top: 45%;
+	left: 30%;
+	width: 40%;
+	text-align: center;
+	border-color: rgb(153, 0, 51);
+	border-radius: 10px;
+	border-width: 2px;
+	border-style: ridge;
+	border-collapse: separate;
+}
+.box {
+	border-color: rgb(153, 0, 51);
+	border-radius: 10px;
+	border-width: 2px;
+	border-style: ridge;
+	border-collapse: separate;
+	text-align: justify;
+    text-justify: inter-word;
+}
+.box ~ td{
+	padding-left: 20px;
+}
+.page {
+	margin:0px;
+	height: 100%;
+}
+.header {
+	background-image:url("images/img.jpg");
+	background-size:100% 100%;
+	padding:20px;
+	color:white;
+}
+
+.header a, td.sidebar a{
+	color:white;
+}
+
+a{
+	text-decoration: none;
+}
+.style1 {
+	color: #006699;
+	font-weight: bold;
+}
+.style2 {
+	color: #006699;
+	font-weight: bold;
+	font-size: large;
+}
+.style4 {
+	color: #000000;
+	font-weight: bold;
+}
+.style5 {color: #990033}
+.style6 {color: #ECE9D8}
+.style7 {
+	color: #006699;
+	font-weight: bold;
+}
+.style8 {
+	color: #6633CC;
+	font-weight: bold;
+}
+
+.head1 {
+	position: absolute;
+	width:93%;
+	top:40%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-large;
+	font-weight: bold;
+	color: blue;
+	text-align: center;
+}
+.msg {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-large;
+	font-weight: bold;
+	color: blue;
+	text-align: center;
+}
+.errors {
+	color: #990033;	
+	font-weight: bold;
+}
+.tot {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #000000;
+	
+}
+.tans {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: green;
+}
+.fans {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: red;
+}
+
+td.content{
+	padding-left:50px;
+}
+td {
+	color: #990033;
+	padding-bottom: 10px;
+}
+a{
+	color: #990033;
+}
+#selected {
+	font-weight: bold;
+	font-size: large;
+	color:blue;
+}
+#det {
+	padding-left: 50px;
+}
+#pane {
+	padding-top: 10px;
+	width:80%;
+}

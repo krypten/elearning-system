@@ -25,9 +25,6 @@ import java.util.HashMap;
  *  	Typical Learning Time
  *  	Difficulty
  *  
- *  9. Classification
- *  	Keywords
- *  
  *  X. Custom [ Either to be added object or meta tags
  *  	BookName :
  *  	PageNo. :
@@ -47,18 +44,27 @@ public class LearningObject {
 	
 	public String bookName = new String("");
 	public Integer startPageNum = new Integer(0); // "FORMAT :: XX-XX"
-	
-	// TBD :: 
-	public Integer chapterNum = new Integer(0);
-	
-	// TBD :: 
 	public String moduleName = new String("");
 
-	/**
-	 *  Initialize with library object
-	 *  Static method to Library to Learning Object 
-	 */
-
+	// TBD :: 
+	public Integer chapterNum = new Integer(0);
+	 
+	public void print() {
+		print("\t");
+	}
+	
+	public void print(String indent) {
+		System.out.println(indent + "learning object");
+		
+		general.print(indent);
+		technical.print(indent);
+		educational.print(indent);
+		
+		System.out.println(indent + "Module : " + moduleName);
+		System.out.println(indent + "Book Name : " + bookName);		
+	
+		System.out.println();
+	}
 	
 	// TBD :: 
 	public Boolean similarObject(LearningObject lo2) {

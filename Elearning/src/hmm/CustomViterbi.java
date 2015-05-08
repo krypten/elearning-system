@@ -12,6 +12,7 @@ public class CustomViterbi {
 		this.hmm = hmm;
 	}
 	
+	@SuppressWarnings({ "unchecked" })
 	public ArrayList<Integer> start(ArrayList<Integer> obser)
 	{
 		Integer[] obs = new Integer[obser.size()];
@@ -62,7 +63,6 @@ public class CustomViterbi {
 		for (Integer x: path) {
         	System.out.print(hmm.mStates[x] + " ");
         }
-        System.out.println();
 	}
 	
 	public void printBestPathProbability() {

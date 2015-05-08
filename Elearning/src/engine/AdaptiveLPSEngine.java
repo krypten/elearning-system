@@ -1,133 +1,204 @@
 package engine;
 
-import java.sql.Time;
 import java.util.ArrayList;
 
-import hmm.HMM;
-import hmm.Viterbi;
+import php.java.bridge.PhpProcedure;
+import hmm.CustomHMM;
+import hmm.CustomViterbi;
 import authoring.LearningRepository;
 
 public class AdaptiveLPSEngine {
 
-	private Viterbi viterbi;
+	private CustomViterbi viterbi;
 	private LearningRepository learningRepo;
-	private LearningForest learningMash = new LearningForest();
-	private ArrayList<Integer> outputSequence = new ArrayList<>();
+	public LearningForest learningMash = new LearningForest();
+	
+	private int currentPosition;
+	private int numModules;
+        
+	private ArrayList<Integer> observationSequence;
 
+	public void start() {
+		if (this.learningRepo != null) {
+			this.learningMash.populate(this.learningRepo);
+		} else {
+			start(null);
+		}
+	}
+	
 	public void start(LearningRepository repo) {
 		this.learningRepo = repo;
-		// this.learningMash.populate(learningRepo);
-	
-		startHMMTest();
-	}	
-	
-	public void initialise(double profileScore) {
-		/*
-		 * TBD :: Initialize the HMM based on the Profile Score generated from the Test
-		 */
+		if (this.learningRepo != null) {
+			this.learningMash.populate(this.learningRepo);
+		}
 		
-		int numStates = 3;
-		double transisionMatrix[][] = new double[][] {{Math.log(0.6), Math.log(0.3), Math.log(0.1)},
-														{Math.log(0.2), Math.log(0.6), Math.log(0.2)},
-														{Math.log(0.1), Math.log(0.3), Math.log(0.6)}};
-		
-		int numOutputs = 3;
-		double emisionMatrix[][] = new double[][] {{Math.log(0.6), Math.log(0.4), Math.log(0.0)},
-													{Math.log(0.33), Math.log(0.33), Math.log(0.33)},
-													{Math.log(0.0), Math.log(0.4), Math.log(0.6)}};
-			
-		// build HMM from given data
-		HMM h = new HMM(numStates, numOutputs, transisionMatrix, emisionMatrix);
+		init();
+	}
 
-		// print HMM
-		h.printStartProb();
-		h.printOutputProb();
-		h.printTransitionProb();
+	
+	public void init() {
+        double start_probabilities[] = {0.6, 0.3, 0.1};
+
+		double transition_probabilities[][] = {{0.6, 0.3, 0.1},
+		                                       {0.25, 0.5, 0.25},
+		                                       {0.1, 0.3, 0.6}};
+
+		double emission_probabilities[][] = {{0.6, 0.3, 0.1},
+		                                     {0.33, 0.34, 0.33},
+		                                     {0.1, 0.3, 0.6}};
 		
 
-		// create Viterbi object for computing most likely sequences
-		this.viterbi = new Viterbi(h);
-	
-		System.out.println();
-		
-		 // Insert the starting state fir sequence
-		this.outputSequence.add(0);
+		String states[] = {"Beginner", "Intermediate", "Advanced"};
+        String outputs[] = {"Deteriorate", "Static", "Improvement"};
 
+        // build HMM from given data
+        CustomHMM h = new CustomHMM(states.length, outputs.length, transition_probabilities, emission_probabilities, start_probabilities);
+        h.setStatesNames(states);
+        h.setOutputNames(outputs);
+
+        this.viterbi = new CustomViterbi(h);
+    }
+	
+	public void init(int observation) {
+		if (observation == 0) {
+			this.viterbi.hmm.mStartProbability = new double[]{0.6, 0.3, 0.1};
+		} else if (observation == 1) {
+			this.viterbi.hmm.mStartProbability = new double[]{0.3, 0.6, 0.1};;
+		} else {
+			this.viterbi.hmm.mStartProbability = new double[]{0.1, 0.3, 0.6};;
+		}
+	}
+
+	public void clearObservations() {
+		if (observationSequence != null) {
+			observationSequence.clear();
+		}
+		currentPosition = 0;
+    }
+    
+    public void initModule(int num_Modules) {
+        numModules = num_Modules;
+        observationSequence = arrayListInit(numModules);
+    }
+    
+    public int addObservation(int currentObservation) {
+        observationSequence.set(currentPosition, currentObservation);
+        ArrayList<Integer>state = this.viterbi.start(this.observationSequence);
+        printSequence(state);
+        currentPosition++;
+        return state.get(currentPosition - 1);
+    }
+    
+	public void test() {
+		// startCustomHMMTest();
+		ArrayList<Integer> states = new ArrayList<>();
+		Integer obs[] = new Integer[] {2, 2, 1, 1, 2};
+		
+		clearObservations();
+		init();
+		initModule(obs.length);
+		
+		for (Integer i : obs) {
+			states.add( addObservation(i) );
+		}
+		
+		System.out.println(states);
 	}
 	
-	public int nextLearningObject(double objectScore, Time timeElapsed) {
-		int currentObservation = observationValue(objectScore, timeElapsed);
-		int currentState = updateState(currentObservation);
-	
-		/*
-		 * TBD :: Based on the updated state and get the next Learning Object from the graph.
-		 */
-		return 0*currentState;
+	public ArrayList<Integer> getStates(ArrayList<Integer> observations) {
+		return this.viterbi.start(observations);
+	}
+
+	public ArrayList<Integer> getObsStates() {
+        System.out.println("Current observation sequence: " + observationSequence);
+		return observationSequence;
 	}
 	
-	private int updateState(int currentObservation) {
-		/*
-		 * TBD :: Based on current observation return the next Object
-		 */
-		
-		outputSequence.add(currentObservation);
-		
-		int state[] = viterbi.mostLikelySequence((Integer[])outputSequence.toArray());
-		
-	
-	    System.out.println();
-	    System.out.print("sequence " + " : ");
-	    for (int j  = 0; j < state.length; j++) {
-	    	System.out.print(state[j] + " , ");
-	    }
-	    
-	    return state[state.length - 1];
+	public int getObsState() {
+		return observationSequence.get(currentPosition - 1);
 	}
 	
-	private int observationValue(double objectScore, Time timeElapsed) {
-		/*
-		 *  TBD :: Based on time elapsed and the score return the observation
-		 */
+	public int[] getStates(int[] observations) {
+		return convertToArray(getStates(convertToList(observations)));
+	}
+		
+	public int getState(int[] observations, int index) {
+		int[] states = getStates(observations);
+		if (index < states.length) { 
+			return states[index];
+		}
 		return 0;
 	}
 	
-	private void startHMMTest() {
-		int numStates = 3;
-		double transisionMatrix[][] = new double[][] {{Math.log(0.6), Math.log(0.3), Math.log(0.1)},
-														{Math.log(0.2), Math.log(0.6), Math.log(0.2)},
-														{Math.log(0.1), Math.log(0.3), Math.log(0.6)}};
-
-		int numOutputs = 3;
-		double emisionMatrix[][] = new double[][] {{Math.log(0.6), Math.log(0.4), Math.log(0.0)},
-													{Math.log(0.33), Math.log(0.33), Math.log(0.33)},
-													{Math.log(0.0), Math.log(0.4), Math.log(0.6)}};
-
-		Integer outputSequence[][] = new Integer[][] {{0, 2, 1, 1, 2, 2, 1, 0, 0}, {2, 0, 1, 2, 2, 1, 1, 0, 0}};
+	public int getCurrentPosition() {
+		return currentPosition;
+	}
+	public void printSequence(ArrayList<Integer> state) {
+	    System.out.print("Sequence " + " : ");
+	    for (int j  = 0; j < state.size(); j++) {
+	    	System.out.print(state.get(j) + (j == state.size()-1 ? "\n\n" : " , "));
+	    }
+	}
 	
-		// build HMM from given data
-		HMM h = new HMM(numStates, numOutputs, transisionMatrix, emisionMatrix);
-
-		// print HMM
-		h.printStartProb();
-		h.printOutputProb();
-		h.printTransitionProb();
+	private ArrayList<Integer> arrayListInit(int num){
+        ArrayList<Integer> temp = new ArrayList<>();
+        for(int i = 0; i < num; i ++){
+            temp.add(0);
+        }
+        return temp;
+    }
+	
+	private int updateState(int currentObservation) {
+		/*
+		 * Based on current observation, returns the state
+		 */
 		
-
-		// create Viterbi object for computing most likely sequences
-		Viterbi v = new Viterbi(h);
-	
-		System.out.println();
-	
-		// compute and print most likely sequence for each test sequence
+		observationSequence.add(currentObservation);
 		
-		for (int i = 0; i < outputSequence.length; i++) {
-			int[] state = v.mostLikelySequence(outputSequence[i]);
+		ArrayList<Integer>state = this.viterbi.start(this.observationSequence);
+		printSequence(state);
+		
+	    return state.get(state.size() - 1);
+	}
 	
-		    System.out.println();
-		    System.out.print("sequence " + " : ");
-		    for (int j  = 0; j < state.length; j++) {
-		    	System.out.print(state[j] + " , ");
-		    }
+	private int[] convertToArray(ArrayList<Integer> list) {
+		int[] iArray = new int[list.size()];
+		for(int i = 0; i < list.size(); i++) {
+			iArray[i] = (int) list.get(i);
 		}
+		return iArray;
+	}
+	
+	private ArrayList<Integer>  convertToList(int[] array) {
+		ArrayList<Integer> iList = new ArrayList<Integer>();
+		for(int i = 0; i < array.length; i++) {
+			iList.add((Integer) array[i]);
+		}
+		return iList;
 	}
 }
+
+/*
+	private void startCustomHMMTest() {
+	
+		double start_probabilities[] = {0.6, 0.3, 0.1};
+		
+		double transition_probabilities[][] = {{0.6, 0.3, 0.1},
+		                                       {0.25, 0.5, 0.25},
+		                                       {0.1, 0.3, 0.6}};
+		
+		double emission_probabilities[][] = {{0.6, 0.3, 0.1},
+		                                     {0.33, 0.34, 0.33},
+		                                     {0.1, 0.3, 0.6}};
+		
+		
+		String states[] = {"Beginner", "Intermediate", "Advanced"};
+		String outputs[] = {"Deteriorate", "Static", "Improvement"};
+		
+		CustomHMM h = new CustomHMM(3, 3, transition_probabilities, emission_probabilities, start_probabilities);
+		h.setStatesNames(states);
+		h.setOutputNames(outputs);
+		
+		this.viterbi = new CustomViterbi(h);
+	}
+*/

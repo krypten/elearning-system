@@ -19,29 +19,6 @@ import com.hp.hpl.jena.util.FileManager;
 
 public class RDFData {
 	public static void extractModelResource(Resource subject, Model model, HashMap<String, String> map) {
-		/*
-		 String queryStr = "PREFIX opus: <http://lsdis.cs.uga.edu/projects/semdis/opus>"
-		 
-						+ " SELECT ?varX WHERE { "
-						+ "?varX  opus:#book_title " + subject.toString() + " . "
-						+ " } limit 2";
-		
-		Query query = QueryFactory.create(queryStr) ;
-		
-		try (QueryExecution qexec = QueryExecutionFactory.create(query, model)) {
-			//Iterator<QuerySolution> results = qexec.execSelect() ;
-			ResultSet results = qexec.execSelect();
-
-			// Output query results	
-			ResultSetFormatter.out(System.out, results, query);
-			
-			//for ( ; results.hasNext() ; ) {
-		    //	QuerySolution soln = results.next() ;
-		    //	System.out.println("QUERY SOLUTION  : " + soln.toString());
-		    //}
-		}
-		*/
-
 		StmtIterator stmtIter = model.listStatements();
 		
 		if (stmtIter.hasNext()) {
@@ -116,6 +93,7 @@ public class RDFData {
 		    		String bookTitle = tags.get(Book.bookTitleURI);
 		    		Book book = lib.getBookByTitle(bookTitle);
 		    		book.getTags().putAll(tags);
+		    		book.setLanguage(tags.get(Book.bookLanguageURI));
 		    		lib.insert(book);
 		    	}
 		    }
@@ -124,3 +102,29 @@ public class RDFData {
 		}
 	}
 }
+
+/* 
+	SPARQL :: Not working currently
+
+String queryStr = "PREFIX opus: <http://lsdis.cs.uga.edu/projects/semdis/opus>"
+
+				+ " SELECT ?varX WHERE { "
+				+ "?varX  opus:#book_title " + subject.toString() + " . "
+				+ " } limit 2";
+
+Query query = QueryFactory.create(queryStr) ;
+
+try (QueryExecution qexec = QueryExecutionFactory.create(query, model)) {
+	//Iterator<QuerySolution> results = qexec.execSelect() ;
+	ResultSet results = qexec.execSelect();
+
+	// Output query results	
+	ResultSetFormatter.out(System.out, results, query);
+	
+	//for ( ; results.hasNext() ; ) {
+   //	QuerySolution soln = results.next() ;
+   //	System.out.println("QUERY SOLUTION  : " + soln.toString());
+   //}
+}
+*/
+
